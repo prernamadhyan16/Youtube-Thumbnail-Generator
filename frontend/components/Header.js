@@ -10,7 +10,7 @@ const Header = () => {
       <Container>
         {/* Logo */}
         <Navbar.Brand href="/" style={{ fontWeight: 'bold', color: '#343a40' }}>
-          MyWebsite
+          GetThumb
         </Navbar.Brand>
 
         {/* Toggle for Mobile */}

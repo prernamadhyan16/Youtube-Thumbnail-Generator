@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer style={{ backgroundColor: '#f8f9fa', padding: '40px 0' }}>
       <Container>
-        {/* Footer Content */}
+        Footer Content
         <Row>
           <Col lg={4} md={6}>
             <h5>Quickads</h5>

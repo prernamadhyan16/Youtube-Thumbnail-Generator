@@ -26,12 +26,11 @@ const HomeCarousel = () => {
             color="white"
           >
             <Box bg="rgba(0, 0, 0, 0.5)" p={6} borderRadius="md">
-              <Heading size="2xl" mb={4}>
-                {slide.heading}
-              </Heading>
-              <Button colorScheme="purple" size="lg">
-                Learn More
-              </Button>
+            <Heading size="2xl" mb={4} color="purple.600" textTransform="uppercase">
+              {slide.heading}
+            </Heading>
+
+              
             </Box>
           </Box>
         </Carousel.Item>
