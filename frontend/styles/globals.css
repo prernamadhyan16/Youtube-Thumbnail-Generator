@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdf6eb; /* QuickAds-like background */
+  }
+  
+  #__next {
+    height: 100%; /* Ensures the Next.js root spans the viewport */
+    display: flex;
+    flex-direction: column;
+  }
+  
