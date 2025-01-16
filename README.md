@@ -44,5 +44,5 @@ Ensure you have the following installed on your system:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-repo>/GetThumb.git
+   https://github.com/prernamadhyan16/Youtube-Thumbnail-Generator.git
    cd GetThumb
