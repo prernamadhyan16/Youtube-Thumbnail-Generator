@@ -26,7 +26,7 @@ const Header = () => {
               style={{
                 textDecoration: router.pathname === '/' ? 'underline' : 'none',
                 fontWeight: router.pathname === '/' ? 'bold' : 'normal',
-                color: '#343a40',
+                color: '#6b46c1',
               }}
             >
               Home
@@ -37,7 +37,7 @@ const Header = () => {
               style={{
                 textDecoration: router.pathname === '/ideas' ? 'underline' : 'none',
                 fontWeight: router.pathname === '/ideas' ? 'bold' : 'normal',
-                color: '#343a40',
+                color: '#6b46c1',
               }}
             >
               Ideas
@@ -48,7 +48,7 @@ const Header = () => {
               style={{
                 textDecoration: router.pathname === '/about' ? 'underline' : 'none',
                 fontWeight: router.pathname === '/about' ? 'bold' : 'normal',
-                color: '#343a40',
+                color: '#6b46c1',
               }}
             >
               About
@@ -59,7 +59,7 @@ const Header = () => {
               style={{
                 textDecoration: router.pathname === '/contact' ? 'underline' : 'none',
                 fontWeight: router.pathname === '/contact' ? 'bold' : 'normal',
-                color: '#343a40',
+                color: '#6b46c1',
               }}
             >
               Contact
