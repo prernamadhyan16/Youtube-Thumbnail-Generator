@@ -46,3 +46,6 @@ Ensure you have the following installed on your system:
    ```bash
    https://github.com/prernamadhyan16/Youtube-Thumbnail-Generator.git
    cd GetThumb
+### Documentation
+
+https://docs.google.com/document/d/1GIRi-iPJUHJ3lu3Fsvc78Xd3vqKnHS6kk-hgzcTOSUM/edit?usp=sharing
