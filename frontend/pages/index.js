@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div>
         <Header/>
-      <HomeCarousel />
-      {/* <Footer/> */}
-      <InputSection/>
+        <HomeCarousel />
+        <InputSection/>
+        <Footer/>
     </div>
   );
 };

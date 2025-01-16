@@ -25,8 +25,8 @@ const HomeCarousel = () => {
             textAlign="center"
             color="white"
           >
-            <Box bg="rgba(0, 0, 0, 0.5)" p={6} borderRadius="md">
-            <Heading size="2xl" mb={4} color="purple.600" textTransform="uppercase">
+            <Box bg="rgba(0, 0, 0, .75)" p={6} borderRadius="md">
+            <Heading size="xl" mb={2} color="white" textTransform="uppercase">
               {slide.heading}
             </Heading>
 

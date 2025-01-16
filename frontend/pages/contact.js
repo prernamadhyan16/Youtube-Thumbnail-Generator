@@ -10,6 +10,7 @@ import {
   Button,
   useToast,
 } from "@chakra-ui/react";
+import Footer from "components/Footer";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -135,6 +136,7 @@ const ContactUs = () => {
       >
         Send Message
       </Button>
+      <Footer/>
     </Box>
   );
 };

@@ -90,7 +90,7 @@ const InputSection = ({ onThumbnailsGenerated }) => {
   return (
     <Box maxW="800px" mx="auto" p={8} bg="white" boxShadow="lg" borderRadius="md">
       <Heading size="lg" mb={6} textAlign="center" color="purple.600">
-        Create Your Own Youtube Thumbnail
+        LETS HELP YOU CREATE!
       </Heading>
       <VStack align="stretch" spacing={6}>
         <FormControl>
@@ -112,7 +112,6 @@ const InputSection = ({ onThumbnailsGenerated }) => {
             type="file"
             accept="image/*"
             onChange={handleImageUpload}
-            size="lg"
             focusBorderColor="purple.500"
             borderColor="gray.300"
           />

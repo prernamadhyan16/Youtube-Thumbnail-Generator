@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useRouter } from 'next/router';
+import Logo from './Logo'; 
 
 const Header = () => {
   const router = useRouter();
@@ -9,14 +10,15 @@ const Header = () => {
     <Navbar bg="light" expand="lg" fixed="top" className="shadow-sm">
       <Container>
         {/* Logo */}
-        <Navbar.Brand href="/" style={{ fontWeight: 'bold', color: '#343a40' }}>
+        <Logo/>
+        <Navbar.Brand href="/" style={{ fontWeight: 'bold', color: '#6b46c1' }}>
           GetThumb
         </Navbar.Brand>
 
         {/* Toggle for Mobile */}
         <Navbar.Toggle aria-controls="navbar-nav" />
-        <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto">
+        <Navbar.Collapse id="navbar-nav" >
+          <Nav className="ms-auto" >
             {/* Navigation Links */}
             <Nav.Link
               href="/"

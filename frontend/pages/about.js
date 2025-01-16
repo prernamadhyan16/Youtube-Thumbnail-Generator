@@ -8,6 +8,7 @@ import {
   Flex,
   VStack,
 } from "@chakra-ui/react";
+import Footer from "components/Footer";
 
 const AboutUs = () => {
   return (
@@ -23,13 +24,11 @@ const AboutUs = () => {
         shadow="lg"
         mb={10}
       >
-        <Heading as="h1" size="2xl" mb={4}>
+        <Heading as="h2" size="xl" mb={4}>
           About Us
         </Heading>
-        <Text fontSize="lg" maxW="800px" mx="auto">
-          QuickAds is a one-of-its-kind AI-Ad Generator that outperforms its
-          competitors in speed, features, and quality. We believe in delivering
-          exceptional results.
+        <Text fontSize="md" maxW="10000px" mx="auto">
+          GetThumb is a revolutionary standalone YouTube thumbnail maker, designed to help creators craft stunning thumbnails in minutes. Our goal is to empower content creators with easy-to-use tools for professional results.
         </Text>
       </Box>
 
@@ -43,23 +42,20 @@ const AboutUs = () => {
         <Box flex={1}>
           <Image
             src="/about-hero-image.jpg"
-            alt="Team Working"
+            alt="Thumbnail Creation"
             borderRadius="lg"
             shadow="lg"
           />
         </Box>
         <VStack flex={1} spacing={6} align="start">
           <Heading as="h2" size="lg" color="#6b46c1">
-            Our Vision
+            Our Mission
           </Heading>
           <Text fontSize="md" color="gray.700">
-            QuickAds aims to revolutionize the way businesses approach
-            advertising. With cutting-edge AI technology, we empower businesses
-            to create high-quality, professional ads in seconds.
+            At GetThumb, our mission is to make thumbnail creation effortless and accessible for everyone. Whether you’re a new YouTuber or an established creator, our tools are built to meet your needs.
           </Text>
           <Text fontSize="md" color="gray.700">
-            From virtual product photography to ad translations, QuickAds
-            handles it all with ease, helping you focus on what you do best.
+            With features like automated design suggestions, drag-and-drop editing, and access to a rich library of templates, GetThumb helps your videos stand out and attract more viewers.
           </Text>
         </VStack>
       </Flex>
@@ -67,11 +63,10 @@ const AboutUs = () => {
       {/* Team Section */}
       <Box textAlign="center" mb={12}>
         <Heading as="h2" size="lg" mb={4}>
-          Meet the Team
+          Meet the Creator
         </Heading>
         <Text fontSize="md" color="gray.600">
-          Our team of experts works tirelessly to ensure QuickAds stays ahead
-          of the curve.
+          Behind GetThumb is a passionate creator dedicated to simplifying thumbnail design for everyone.
         </Text>
       </Box>
       <SimpleGrid columns={{ base: 1, md: 1 }} spacing={8} mb={12}>
@@ -85,17 +80,17 @@ const AboutUs = () => {
           _hover={{ transform: "scale(1.05)" }}
         >
           <Image
-            src="/team-member1.jpg"
-            alt="Team Member"
+            src="/creator.jpg"
+            alt="Creator"
             borderRadius="full"
             boxSize="120px"
             mx="auto"
             mb={4}
           />
           <Heading as="h3" size="md" mb={2}>
-            John Doe
+            Prerna Madhyan
           </Heading>
-          <Text color="gray.500">CEO & Founder</Text>
+          <Text color="gray.500">Full-Stack Web Designer</Text>
         </Box>
       </SimpleGrid>
 
@@ -103,29 +98,30 @@ const AboutUs = () => {
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8} textAlign="center">
         <Box>
           <Heading as="h4" size="lg" color="#6b46c1">
-            600+
+            1M+
           </Heading>
-          <Text color="gray.600">Clients Served</Text>
+          <Text color="gray.600">Thumbnails Created</Text>
         </Box>
         <Box>
           <Heading as="h4" size="lg" color="#6b46c1">
-            700k
+            500k
           </Heading>
-          <Text color="gray.600">Ads Generated</Text>
+          <Text color="gray.600">Creators Helped</Text>
         </Box>
         <Box>
           <Heading as="h4" size="lg" color="#6b46c1">
-            1.2M
+            10M+
           </Heading>
-          <Text color="gray.600">Hours Saved</Text>
+          <Text color="gray.600">Views Boosted</Text>
         </Box>
         <Box>
           <Heading as="h4" size="lg" color="#6b46c1">
-            110
+            100%
           </Heading>
-          <Text color="gray.600">Certified Projects</Text>
+          <Text color="gray.600">User Satisfaction</Text>
         </Box>
       </SimpleGrid>
+      <Footer />
     </Box>
   );
 };

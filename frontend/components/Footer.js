@@ -1,62 +1,64 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Box, Container, SimpleGrid, Text, VStack, HStack, Icon, Divider } from '@chakra-ui/react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: '#f8f9fa', padding: '40px 0' }}>
-      <Container>
-        Footer Content
-        <Row>
-          <Col lg={4} md={6}>
-            <h5>Quickads</h5>
-            <p>
-              Quickads is an AI Ad Generator to create effortless Image ads, Video Ads, and Faceless
-              videos.
-            </p>
-            <div style={{ fontSize: '20px' }}>
-              <FaFacebook style={{ marginRight: '10px' }} />
-              <FaTwitter style={{ marginRight: '10px' }} />
-              <FaLinkedin style={{ marginRight: '10px' }} />
-              <FaInstagram />
-            </div>
-          </Col>
+    <Box bg="gray.100" py={10} color="gray.700">
+      <Container maxW="container.lg">
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+          {/* About Section */}
+          <VStack align="start" spacing={4}>
+            <Text fontSize="xl" fontWeight="bold">
+              GetThumb
+            </Text>
+            <Text>
+              GetThumb is your standalone YouTube thumbnail maker designed to create eye-catching
+              and engaging thumbnails effortlessly. Whether you're a content creator, marketer, or
+              a YouTube enthusiast, we've got you covered.
+            </Text>
+            <HStack spacing={4} fontSize="xl">
+              <Icon as={FaFacebook} cursor="pointer" />
+              <Icon as={FaTwitter} cursor="pointer" />
+              <Icon as={FaLinkedin} cursor="pointer" />
+              <Icon as={FaInstagram} cursor="pointer" />
+            </HStack>
+          </VStack>
 
-          <Col lg={2} md={6}>
-            <h6>Features</h6>
-            <ul className="list-unstyled">
-              <li>Ads Inspiration Library</li>
-              <li>AI Ad Creation</li>
-              <li>Analyze Ads</li>
-              <li>Deploy Ads</li>
-            </ul>
-          </Col>
+          {/* Features Section */}
+          <VStack align="start" spacing={2}>
+            <Text fontSize="lg" fontWeight="bold">
+              Features
+            </Text>
+            <Text>Customizable Templates</Text>
+            <Text>High-Resolution Thumbnails</Text>
+            <Text>Easy-to-Use Editor</Text>
+            <Text>Export Options</Text>
+          </VStack>
 
-          <Col lg={2} md={6}>
-            <h6>Use Cases</h6>
-            <ul className="list-unstyled">
-              <li>Startups</li>
-              <li>SMEs</li>
-              <li>E-Commerce</li>
-              <li>Marketing Agencies</li>
-            </ul>
-          </Col>
-        </Row>
+          {/* Use Cases Section */}
+          <VStack align="start" spacing={2}>
+            <Text fontSize="lg" fontWeight="bold">
+              Use Cases
+            </Text>
+            <Text>YouTube Creators</Text>
+            <Text>Digital Marketers</Text>
+            <Text>Online Educators</Text>
+            <Text>Businesses & Agencies</Text>
+          </VStack>
+        </SimpleGrid>
 
-        <hr />
+        <Divider my={8} />
 
-        {/* Footer Bottom */}
-        <Row>
-          <Col className="text-center">
-            <p>Made with ❤️ in USA</p>
-            <p>
-              All Rights Reserved By 88 Ventures US, LLC | Headquartered At 14001 W Hwy 29 Suite
-              102, Liberty Hill, Dallas TX 78642, USA
-            </p>
-          </Col>
-        </Row>
+        {/* Footer Bottom Section */}
+        <VStack spacing={2} textAlign="center">
+          <Text>Made with ❤️ for creators worldwide</Text>
+          <Text fontSize="sm">
+            All Rights Reserved By GetThumb | Simplifying YouTube thumbnail creation for everyone.
+          </Text>
+        </VStack>
       </Container>
-    </footer>
+    </Box>
   );
 };
 
